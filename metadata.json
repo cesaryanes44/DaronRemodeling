@@ -1,0 +1,6 @@
+{
+  "name": "Vanguard Construction Group",
+  "description": "Premier commercial and residential construction, structural engineering, and infrastructure development firm with interactive project cost estimator and bilingual English/Spanish support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
