@@ -1,9 +1,13 @@
 import { Project, Testimonial } from '../types';
+import heroImage from '../assets/images/hero_daron_remodeling_1791408265699.jpg';
+import roofingImage from '../assets/images/roofing_shingles_usa_1791408277015.jpg';
+import kitchenImage from '../assets/images/kitchen_bathroom_remodel_1791408285664.jpg';
+import paintingImage from '../assets/images/painter_craftsman_work_1791408295413.jpg';
 
-export const HERO_IMAGE = '/src/assets/images/hero_daron_remodeling_1791408265699.jpg';
-export const ROOFING_IMAGE = '/src/assets/images/roofing_shingles_usa_1791408277015.jpg';
-export const KITCHEN_IMAGE = '/src/assets/images/kitchen_bathroom_remodel_1791408285664.jpg';
-export const PAINTING_IMAGE = '/src/assets/images/painter_craftsman_work_1791408295413.jpg';
+export const HERO_IMAGE = heroImage;
+export const ROOFING_IMAGE = roofingImage;
+export const KITCHEN_IMAGE = kitchenImage;
+export const PAINTING_IMAGE = paintingImage;
 
 export const PROJECTS: Project[] = [
   {
