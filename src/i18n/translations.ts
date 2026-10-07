@@ -36,7 +36,7 @@ export const translations = {
     },
     about: {
       kicker: 'Meet Your Contractor',
-      title: 'Hi, I’m Daron — Your Neighborhood Craftsman',
+      title: 'Hi, I’m Deny A. — Your Neighborhood Craftsman',
       lead: 'I run DARON REMODELING as a hands-on, owner-operated business. When you hire me, you don’t get passed around between sales reps, sub-contractors, or project managers you’ve never met. I am the one who meets you, writes your estimate, and picks up the tools to do the work.',
       body: 'Over the last 15 years working on American residential homes, I have specialized in the three most critical improvements every home needs: professional painting with spotless prep, long-lasting asphalt shingle roofing engineered for US weather, and practical kitchen and bathroom remodels that make you love your house again. I treat your home like my own: with clean drop cloths, honest communication, and prompt arrival every morning.',
       pillars: [
@@ -306,7 +306,7 @@ export const translations = {
     },
     about: {
       kicker: 'Conoce a tu Contratista',
-      title: 'Hola, soy Daron — Tu Contratista de Confianza',
+      title: 'Hola, soy Deny A. — Tu Contratista de Confianza',
       lead: 'DARON REMODELING es mi empresa independiente. Cuando me contratas, no tratas con secretarias, vendedores a comisión ni cuadrillas de desconocidos. Yo mismo voy a tu casa, te doy el presupuesto en persona y realizo el trabajo con mis propias manos.',
       body: 'Durante más de 15 años trabajando en casas en Estados Unidos, me he especializado en los tres trabajos fundamentales que más valor y protección le dan a un hogar: techos de tejas asfálticas resistentes al clima, pintura profesional con preparación minuciosa y remodelaciones completas de cocina y baño. Trato cada casa como si fuera la mía: con lonas limpias para proteger tus pisos, puntualidad diaria y honestidad en cada detalle.',
       pillars: [

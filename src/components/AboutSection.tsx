@@ -89,7 +89,7 @@ export const AboutSection: React.FC<AboutProps> = ({ language }) => {
             <div className="relative rounded-md overflow-hidden border border-stone-700/80 shadow-2xl bg-stone-950">
               <img
                 src={PAINTING_IMAGE}
-                alt="Daron working carefully on a residential home project"
+                alt="Deny A. working carefully on a residential home project"
                 referrerPolicy="no-referrer"
                 className="w-full h-auto object-cover aspect-[4/3]"
               />
@@ -97,7 +97,7 @@ export const AboutSection: React.FC<AboutProps> = ({ language }) => {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-1.5 text-xs font-bold text-amber-400 uppercase tracking-wider">
                     <UserCheck className="w-3.5 h-3.5" />
-                    <span>Daron · Independent Contractor</span>
+                    <span>Deny A. · Independent Contractor</span>
                   </div>
                   <span className="text-[10px] font-mono text-stone-400 bg-stone-900 px-2 py-0.5 rounded border border-stone-800">
                     Licensed & Insured
