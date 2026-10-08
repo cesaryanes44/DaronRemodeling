@@ -1,6 +1,6 @@
 {
-  "name": "Vanguard Construction Group",
-  "description": "Premier commercial and residential construction, structural engineering, and infrastructure development firm with interactive project cost estimator and bilingual English/Spanish support.",
+  "name": "DARON REMODELING",
+  "description": "Bilingual home repair and remodeling services in Houston, TX, including asphalt shingle repairs, painting, carpentry, fence repairs, minor plumbing, and kitchen and bath remodeling.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

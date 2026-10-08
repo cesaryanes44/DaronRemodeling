@@ -11,7 +11,6 @@ import { Hero } from './components/Hero';
 import { AboutSection } from './components/AboutSection';
 import { ServicesSection } from './components/ServicesSection';
 import { ProjectsSection } from './components/ProjectsSection';
-import { CostEstimator } from './components/CostEstimator';
 import { WhyWorkWithMe } from './components/WhyWorkWithMe';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import { ContactSection } from './components/ContactSection';
@@ -26,8 +25,6 @@ export default function App() {
 
   const [quotePrefill, setQuotePrefill] = useState<{
     serviceType?: string;
-    scope?: string;
-    estimatedBudget?: string;
     notes?: string;
   }>({});
 
@@ -47,23 +44,6 @@ export default function App() {
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     }
-  };
-
-  const handleTransferEstimate = (estimateData: {
-    serviceType: string;
-    scope: string;
-    estimatedBudget: string;
-    materials: string;
-  }) => {
-    setQuotePrefill({
-      serviceType: estimateData.serviceType,
-      estimatedBudget: estimateData.estimatedBudget,
-      notes:
-        language === 'en'
-          ? `Estimated request: ${estimateData.serviceType} (${estimateData.scope}) using ${estimateData.materials}. Ballpark budget: ${estimateData.estimatedBudget}. Please schedule a free in-person estimate.`
-          : `Solicitud estimada: ${estimateData.serviceType} (${estimateData.scope}) con calidad ${estimateData.materials}. Presupuesto aproximado: ${estimateData.estimatedBudget}. Favor de coordinar estimado gratis en persona.`,
-    });
-    scrollToSection('contact');
   };
 
   const handleSelectServiceForQuote = (serviceTitle: string) => {
@@ -108,7 +88,7 @@ export default function App() {
           language={language}
         />
 
-        {/* Core Services: Painting, Roofing (USA style), Remodeling */}
+        {/* Residential repair and remodeling services */}
         <ServicesSection
           language={language}
           onSelectServiceForQuote={handleSelectServiceForQuote}
@@ -118,12 +98,6 @@ export default function App() {
         <ProjectsSection
           language={language}
           onSelectProjectForEstimate={handleSelectProjectForEstimate}
-        />
-
-        {/* Ballpark Cost Estimator */}
-        <CostEstimator
-          language={language}
-          onTransferEstimate={handleTransferEstimate}
         />
 
         {/* Why Work With Daron / The Independent Contractor Advantage */}

@@ -9,7 +9,9 @@ import {
   CheckCircle, 
   ArrowRight,
   ShieldCheck,
-  PhoneCall
+  PhoneCall,
+  Fence,
+  Wrench
 } from 'lucide-react';
 import { CallOptionsButton } from './CallOptionsButton';
 
@@ -29,12 +31,18 @@ export const ServicesSection: React.FC<ServicesProps> = ({
     roofing: <Home className="w-5 h-5" />,
     painting: <Paintbrush className="w-5 h-5" />,
     remodeling: <Hammer className="w-5 h-5" />,
+    carpentry: <Hammer className="w-5 h-5" />,
+    fence: <Fence className="w-5 h-5" />,
+    plumbing: <Wrench className="w-5 h-5" />,
   };
 
   const imageMap: Record<string, string> = {
     roofing: ROOFING_IMAGE,
     painting: PAINTING_IMAGE,
     remodeling: KITCHEN_IMAGE,
+    carpentry: KITCHEN_IMAGE,
+    fence: ROOFING_IMAGE,
+    plumbing: KITCHEN_IMAGE,
   };
 
   const selectedService = t.items.find((item) => item.id === activeTab) || t.items[0];
@@ -55,7 +63,7 @@ export const ServicesSection: React.FC<ServicesProps> = ({
           </p>
         </div>
 
-        {/* 3-Tab Selector */}
+        {/* Service Selector */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-8 p-1.5 bg-stone-900 rounded-lg border border-stone-800">
           {t.items.map((item, index) => {
             const isActive = item.id === activeTab;

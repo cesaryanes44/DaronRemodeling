@@ -8,8 +8,6 @@ interface ContactProps {
   language: Language;
   initialValues?: {
     serviceType?: string;
-    scope?: string;
-    estimatedBudget?: string;
     notes?: string;
   };
 }
@@ -24,7 +22,7 @@ export const ContactSection: React.FC<ContactProps> = ({
     name: '',
     phone: '',
     email: '',
-    serviceType: 'Roof Replacement (Shingles)',
+    serviceType: 'Asphalt Shingle Roof Repair',
     address: '',
     timeframe: 'As soon as possible / Emergency',
     notes: '',
@@ -71,7 +69,7 @@ export const ContactSection: React.FC<ContactProps> = ({
       name: '',
       phone: '',
       email: '',
-      serviceType: 'Roof Replacement (Shingles)',
+      serviceType: 'Asphalt Shingle Roof Repair',
       address: '',
       timeframe: 'As soon as possible / Emergency',
       notes: '',
@@ -325,8 +323,8 @@ export const ContactSection: React.FC<ContactProps> = ({
                     </span>
                     <span className="text-stone-400">
                       {language === 'en'
-                        ? 'Local residential homes, suburbs & surrounding neighborhoods'
-                        : 'Casas residenciales locales, suburbios y áreas cercanas'}
+                        ? 'Houston, TX and nearby communities'
+                        : 'Houston, TX y comunidades cercanas'}
                     </span>
                   </div>
                 </div>

@@ -58,7 +58,7 @@ export const Hero: React.FC<HeroProps> = ({ language, onNavigate }) => {
           <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-stone-300 font-medium mb-8">
             <span className="flex items-center gap-1.5">
               <CheckCircle2 className="w-3.5 h-3.5 text-amber-400" />
-              {language === 'en' ? 'USA Asphalt Shingle Roofs' : 'Techos de Tejas Asfálticas'}
+              {language === 'en' ? 'Asphalt Shingle Repairs' : 'Reparación de Tejas Asfálticas'}
             </span>
             <span className="flex items-center gap-1.5">
               <CheckCircle2 className="w-3.5 h-3.5 text-amber-400" />
@@ -66,14 +66,14 @@ export const Hero: React.FC<HeroProps> = ({ language, onNavigate }) => {
             </span>
             <span className="flex items-center gap-1.5">
               <CheckCircle2 className="w-3.5 h-3.5 text-amber-400" />
-              {language === 'en' ? 'Kitchens, Baths & Flooring' : 'Cocinas, Baños y Pisos'}
+              {language === 'en' ? 'Carpentry, Fences & Plumbing' : 'Carpintería, Cercas y Plomería'}
             </span>
           </div>
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
             <button
-              onClick={() => onNavigate('estimator')}
+              onClick={() => onNavigate('contact')}
               className="inline-flex items-center justify-center gap-2.5 px-5 py-3.5 text-xs font-extrabold uppercase tracking-wider text-stone-950 bg-amber-500 hover:bg-amber-400 rounded-md transition-all shadow-xl hover:shadow-amber-500/25 cursor-pointer"
             >
               <Calculator className="w-4 h-4" />

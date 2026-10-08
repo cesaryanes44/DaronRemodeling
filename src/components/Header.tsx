@@ -71,12 +71,6 @@ export const Header: React.FC<HeaderProps> = ({
             {t.projects}
           </button>
           <button
-            onClick={() => handleLinkClick('estimator')}
-            className="text-stone-300 hover:text-amber-400 transition-colors whitespace-nowrap focus:outline-none cursor-pointer"
-          >
-            {t.estimator}
-          </button>
-          <button
             onClick={() => handleLinkClick('contact')}
             className="text-stone-300 hover:text-amber-400 transition-colors whitespace-nowrap focus:outline-none cursor-pointer"
           >
@@ -169,12 +163,6 @@ export const Header: React.FC<HeaderProps> = ({
               className="text-left py-2 px-3 text-stone-200 hover:text-amber-400 hover:bg-stone-800/60 rounded"
             >
               {t.projects}
-            </button>
-            <button
-              onClick={() => handleLinkClick('estimator')}
-              className="text-left py-2 px-3 text-stone-200 hover:text-amber-400 hover:bg-stone-800/60 rounded"
-            >
-              {t.estimator}
             </button>
             <button
               onClick={() => handleLinkClick('contact')}

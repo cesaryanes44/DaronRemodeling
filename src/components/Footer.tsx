@@ -103,14 +103,6 @@ export const Footer: React.FC<FooterProps> = ({
               </li>
               <li>
                 <button
-                  onClick={() => onNavigate('estimator')}
-                  className="hover:text-amber-400 transition-colors cursor-pointer"
-                >
-                  {t.nav.estimator}
-                </button>
-              </li>
-              <li>
-                <button
                   onClick={() => onNavigate('contact')}
                   className="hover:text-amber-400 transition-colors cursor-pointer"
                 >
@@ -126,12 +118,9 @@ export const Footer: React.FC<FooterProps> = ({
               {t.footer.servicesTitle}
             </h4>
             <ul className="space-y-1.5 text-stone-400">
-              <li>USA Architectural Asphalt Shingles (GAF / Owens Corning)</li>
-              <li>Roof Tear-Offs, Deck Repair & Leak Inspections</li>
-              <li>Interior Living Rooms, Bedrooms, Ceilings & Trim Paint</li>
-              <li>Exterior Siding, Fascia, Porch & Deck Staining</li>
-              <li>Kitchen Shaker Cabinets, Backsplashes & Quartz Counters</li>
-              <li>Bathroom Vanities, Tile Showers & Waterproof LVP Floors</li>
+              {t.footer.specialties.map((specialty) => (
+                <li key={specialty}>{specialty}</li>
+              ))}
             </ul>
           </div>
         </div>

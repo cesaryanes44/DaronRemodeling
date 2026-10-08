@@ -42,10 +42,3 @@ export interface Testimonial {
   quoteEs: string;
   rating: number;
 }
-
-export interface EstimatorState {
-  service: 'roofing' | 'painting' | 'kitchen' | 'bathroom';
-  scopeTier: 'small' | 'medium' | 'large';
-  materials: 'standard' | 'premium';
-  urgency: boolean;
-}
