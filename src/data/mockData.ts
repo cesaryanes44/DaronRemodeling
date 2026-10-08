@@ -3,11 +3,17 @@ import heroImage from '../assets/images/hero_daron_remodeling_1791408265699.jpg'
 import roofingImage from '../assets/images/roofing_shingles_usa_1791408277015.jpg';
 import kitchenImage from '../assets/images/kitchen_bathroom_remodel_1791408285664.jpg';
 import paintingImage from '../assets/images/painter_craftsman_work_1791408295413.jpg';
+import carpentryImage from '../assets/images/service_carpentry_commons.jpg';
+import fenceRepairImage from '../assets/images/service_fence_repair_commons.jpg';
+import plumbingImage from '../assets/images/service_plumbing_commons.jpg';
 
 export const HERO_IMAGE = heroImage;
 export const ROOFING_IMAGE = roofingImage;
 export const KITCHEN_IMAGE = kitchenImage;
 export const PAINTING_IMAGE = paintingImage;
+export const CARPENTRY_IMAGE = carpentryImage;
+export const FENCE_REPAIR_IMAGE = fenceRepairImage;
+export const PLUMBING_IMAGE = plumbingImage;
 
 export const PROJECTS: Project[] = [
   {

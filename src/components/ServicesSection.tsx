@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
 import { Language } from '../types';
 import { translations } from '../i18n/translations';
-import { ROOFING_IMAGE, PAINTING_IMAGE, KITCHEN_IMAGE } from '../data/mockData';
+import {
+  ROOFING_IMAGE,
+  PAINTING_IMAGE,
+  KITCHEN_IMAGE,
+  CARPENTRY_IMAGE,
+  FENCE_REPAIR_IMAGE,
+  PLUMBING_IMAGE,
+} from '../data/mockData';
 import { 
   Home, 
   Paintbrush, 
@@ -40,9 +47,9 @@ export const ServicesSection: React.FC<ServicesProps> = ({
     roofing: ROOFING_IMAGE,
     painting: PAINTING_IMAGE,
     remodeling: KITCHEN_IMAGE,
-    carpentry: KITCHEN_IMAGE,
-    fence: ROOFING_IMAGE,
-    plumbing: KITCHEN_IMAGE,
+    carpentry: CARPENTRY_IMAGE,
+    fence: FENCE_REPAIR_IMAGE,
+    plumbing: PLUMBING_IMAGE,
   };
 
   const selectedService = t.items.find((item) => item.id === activeTab) || t.items[0];
