@@ -3,6 +3,7 @@ import { Language } from '../types';
 import { translations } from '../i18n/translations';
 import { HERO_IMAGE } from '../data/mockData';
 import { Calculator, ArrowRight, ShieldCheck, Phone, CheckCircle2 } from 'lucide-react';
+import { CallOptionsButton } from './CallOptionsButton';
 
 interface HeroProps {
   language: Language;
@@ -79,13 +80,14 @@ export const Hero: React.FC<HeroProps> = ({ language, onNavigate }) => {
               <span>{t.ctaQuote}</span>
             </button>
 
-            <a
-              href="tel:5557892041"
+            <CallOptionsButton
+              language={language}
+              label={t.ctaCall}
               className="inline-flex items-center justify-center gap-2 px-5 py-3.5 text-xs font-bold uppercase tracking-wider text-stone-100 hover:text-white bg-stone-900/90 hover:bg-stone-800 border border-stone-700 rounded-md transition-all backdrop-blur-sm cursor-pointer"
             >
               <Phone className="w-4 h-4 text-amber-400" />
               <span>{t.ctaCall}</span>
-            </a>
+            </CallOptionsButton>
 
             <button
               onClick={() => onNavigate('projects')}

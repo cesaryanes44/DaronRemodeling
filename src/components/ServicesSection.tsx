@@ -11,6 +11,7 @@ import {
   ShieldCheck,
   PhoneCall
 } from 'lucide-react';
+import { CallOptionsButton } from './CallOptionsButton';
 
 interface ServicesProps {
   language: Language;
@@ -162,13 +163,14 @@ export const ServicesSection: React.FC<ServicesProps> = ({
                   <ArrowRight className="w-4 h-4" />
                 </button>
 
-                <a
-                  href="tel:5557892041"
+                <CallOptionsButton
+                  language={language}
+                  label={language === 'en' ? 'Call Contractor' : 'Llamar al Contratista'}
                   className="px-4 py-3 text-xs font-bold uppercase tracking-wider text-stone-300 hover:text-white bg-stone-800 hover:bg-stone-700 rounded-md transition-colors flex items-center justify-center gap-2"
                 >
                   <PhoneCall className="w-3.5 h-3.5 text-amber-400" />
-                  <span>{language === 'en' ? 'Call Daron Directly' : 'Llamar a Daron'}</span>
-                </a>
+                  <span>{language === 'en' ? 'Call Contractor' : 'Llamar al Contratista'}</span>
+                </CallOptionsButton>
               </div>
             </div>
           </div>

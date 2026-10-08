@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Language } from '../types';
 import { translations } from '../i18n/translations';
 import { Menu, X, Globe, Paintbrush, Phone } from 'lucide-react';
+import { CallOptionsButton } from './CallOptionsButton';
 
 interface HeaderProps {
   language: Language;
@@ -119,13 +120,15 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
 
           {/* Direct Call Action Button */}
-          <a
-            href="tel:5557892041"
-            className="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 text-xs font-bold uppercase tracking-wider text-stone-950 bg-amber-500 hover:bg-amber-400 rounded-md transition-all shadow-md hover:shadow-amber-500/20 whitespace-nowrap cursor-pointer"
+          <CallOptionsButton
+            language={language}
+            label={t.callNow}
+            wrapperClassName="hidden sm:inline-flex"
+            className="inline-flex items-center gap-2 px-3.5 py-2 text-xs font-bold uppercase tracking-wider text-stone-950 bg-amber-500 hover:bg-amber-400 rounded-md transition-all shadow-md hover:shadow-amber-500/20 whitespace-nowrap cursor-pointer"
           >
             <Phone className="w-3.5 h-3.5" />
-            <span>(555) 789-2041</span>
-          </a>
+            <span>{t.callNow}</span>
+          </CallOptionsButton>
 
           {/* Mobile hamburger */}
           <button
@@ -204,13 +207,14 @@ export const Header: React.FC<HeaderProps> = ({
               </div>
             </div>
 
-            <a
-              href="tel:5557892041"
+            <CallOptionsButton
+              language={language}
+              label={t.callNow}
               className="w-full py-2.5 text-center text-xs font-bold uppercase tracking-wider text-stone-950 bg-amber-500 hover:bg-amber-400 rounded-md transition-colors flex items-center justify-center gap-2"
             >
               <Phone className="w-4 h-4" />
-              <span>Call Daron: (555) 789-2041</span>
-            </a>
+              <span>{t.callNow}</span>
+            </CallOptionsButton>
           </div>
         </div>
       )}

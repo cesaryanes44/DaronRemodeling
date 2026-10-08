@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Language } from '../types';
 import { translations } from '../i18n/translations';
 import { Send, CheckCircle2, Phone, MessageSquare, MapPin, Clock, AlertCircle } from 'lucide-react';
+import { CallOptionsButton } from './CallOptionsButton';
 
 interface ContactProps {
   language: Language;
@@ -110,14 +111,17 @@ export const ContactSection: React.FC<ContactProps> = ({
             </div>
           </div>
           <div className="flex items-center gap-2.5 w-full sm:w-auto">
-            <a
-              href="tel:5557892041"
-              className="flex-1 sm:flex-none px-4 py-2.5 text-xs font-black uppercase tracking-wider text-stone-950 bg-amber-500 hover:bg-amber-400 rounded-md transition-colors text-center whitespace-nowrap shadow"
+            <CallOptionsButton
+              language={language}
+              label={language === 'en' ? 'Call Now' : 'Llamar Ahora'}
+              wrapperClassName="flex-1 sm:flex-none"
+              className="w-full px-4 py-2.5 text-xs font-black uppercase tracking-wider text-stone-950 bg-amber-500 hover:bg-amber-400 rounded-md transition-colors text-center whitespace-nowrap shadow"
             >
-              (555) 789-2041
-            </a>
+              <Phone className="w-3.5 h-3.5" />
+              {language === 'en' ? 'Call Now' : 'Llamar Ahora'}
+            </CallOptionsButton>
             <a
-              href="sms:5557892041"
+              href="sms:+12816624097"
               className="flex-1 sm:flex-none px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-stone-200 hover:text-white bg-stone-800 hover:bg-stone-700 rounded-md transition-colors text-center whitespace-nowrap"
             >
               {language === 'en' ? 'Send Text' : 'Enviar SMS'}
@@ -303,12 +307,13 @@ export const ContactSection: React.FC<ContactProps> = ({
                     <span className="font-bold text-white block">
                       {language === 'en' ? 'Call or Text Daron' : 'Llama o Manda Mensaje'}
                     </span>
-                    <a
-                      href="tel:5557892041"
+                    <CallOptionsButton
+                      language={language}
+                      label={language === 'en' ? 'Call or Text' : 'Llamar o Enviar Mensaje'}
                       className="text-amber-400 font-mono font-bold hover:underline"
                     >
-                      (555) 789-2041
-                    </a>
+                      {language === 'en' ? 'Choose a phone number' : 'Elige un número'}
+                    </CallOptionsButton>
                   </div>
                 </div>
 
