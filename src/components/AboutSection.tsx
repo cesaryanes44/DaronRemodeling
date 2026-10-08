@@ -99,9 +99,6 @@ export const AboutSection: React.FC<AboutProps> = ({ language }) => {
                     <UserCheck className="w-3.5 h-3.5" />
                     <span>Deny A. · Independent Contractor</span>
                   </div>
-                  <span className="text-[10px] font-mono text-stone-400 bg-stone-900 px-2 py-0.5 rounded border border-stone-800">
-                    Licensed & Insured
-                  </span>
                 </div>
                 <p className="text-xs text-stone-400">
                   {language === 'en'
